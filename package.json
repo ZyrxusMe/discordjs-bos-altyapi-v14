@@ -1,0 +1,14 @@
+{
+  "name": "discord-bos-altyapi-v14",
+  "version": "1.0.0",
+  "description": "Discord Bos altyapi işte detaya gerek yok.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Adını vermek istemeyen izleyici",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.13.0"
+  }
+}
