@@ -28,7 +28,7 @@ client.on("ready", async () => {
     client.user.setActivity({ state: "Hello world!", name: "Custom Status", type: Discord.ActivityType.Custom })
 
     // slash komutları gönderme
-    const rest = new Discord.REST({ version: '10' }).setToken(config.token);
+    const rest = new Discord.REST({ version: '10' }).setToken(client.token);
     try {
         const commands = client.commands.map(module => module.slash);
         await rest.put(Discord.Routes.applicationCommands(client.user.id), { body: commands });
